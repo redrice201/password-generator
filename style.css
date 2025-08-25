@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.true {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+h1 {
+  color: green;
+}
+.true div {
+  display: flex;
+  justify-content: center;
+  margin: 0 12px;
+  padding: 8px 15px;
+  color: green;
+  cursor: pointer;
+  text-shadow: 0 0;
+  border-left: 3px solid #41ff6d;
+  border-radius: 10px;
+}
+.resultss {
+  text-align: center;
+  width: 600px;
+  border-left: 7px solid #41ff6d;
+  border-radius: 17px;
+  overflow-wrap: break-word;
+  color: green;
+}
+input[type="checkbox"] {
+  border-radius: 0px;
+}
+.middle {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Length {
+  margin: 30px;
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+input[type="number"] {
+  padding: 10px 0px;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 0 2px 0px;
+  outline: none;
+}
+input[type="text"] {
+  padding: 10px 0px;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 0 2px 0px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: #0fc10f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#error {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.error-body {
+  background-color: #df6464;
+  width: 60vh;
+  color: white;
+  padding: 20px;
+  font-size: 12px;
+}
+#error {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+  text-align: center;
+  display: none;
+}
+.error-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.barload {
+  width: 50vh;
+  border: 2px solid #41ff6d;
+  height: 1vh;
+  border-radius: 10px;
+  font-weight: bold;
+}
+#result12 {
+  height: 0.6vh;
+
+  border-radius: 10px;
+  height: 80%;
+}
+.password-container {
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+}
+.passlength1 {
+  text-align: center;
+}
+.passlength {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+@keyframes wipe-in-right {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:right"] {
+  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right both;
+}
